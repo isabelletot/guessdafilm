@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="Isabelle Cardoso Ferreira">
+<meta name="description" content="Challenge yourself to identify as many movies as you can in the shortest amount of time!">
+    <script type="text/javascript">
+        function load()
+        {
+            var obj = localStorage.getItem('score');
+            var obj2 = localStorage.getItem('lives');
+
+            if (obj != null) {
+                localStorage.removeItem('score');
+            }
+
+            if (obj2 != null) {
+                localStorage.removeItem('lives');
+            }
+
+            $('#score span').text("Lives: 3");
+            $('#score span').text("Score: 0");
+        }
+    </script>
+<link rel="shortcut icon" href="./template_files/logo.png">
+<title>Guess da film!</title>
+    <link href="./template_files/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./template_files/css/jumbotron-narrow.css" rel="stylesheet">
+<!--[if lt IE 9]>
+      <script src="/static/js/html5shiv.js"></script>
+      <script src="/static/js/respond.min.js"></script>
+    <![endif]-->
+<script type="text/javascript">var NREUMQ=NREUMQ||[];NREUMQ.push(["mark","firstbyte",new Date().getTime()]);</script><style type="text/css"></style>
+<style type="text/css">.cf-hidden { display: none; } .cf-invisible { visibility: hidden; }</style></head>
+<style>
+    body {background-color: #34000a  }
+</style>
+<body onload="load()">
+<div class="container">
+<div class="navbar navbar-default">
+<div class="navbar-header">
+<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+<a class="navbar-brand" href="index.html">Guess da film!</a>
+</div>
+<div class="navbar-collapse collapse">
+<ul class="nav navbar-nav navbar-right">
+<li class="active"><a href="./template_files/template.html">Play</a></li>
+<li><a href="highscores.html">Highscores</a></li>
+<li><a href="about.html">About</a></li>
+</ul>
+</div>
+</div>
+<div class="jumbotron">
+<div align="center">
+<img src="./template_files/logo.png" class="img-responsive" width="280" height="158">
+</div>
+<p class="lead">How many movies can you guess from images?</p>
+    <a href="game.html" class="btn btn-large btn-success">Play ></a>
+    <br>
+    </div>
+    <div class="footer">
+    <p class="pull-left">created by <a href="https://br.linkedin.com/in/isabellecfer">Isabelle Cardoso Ferreira</a> in 2015</p>
+    <p class="pull-right">
+    </p>
+   </div>
+    </div>
+    <script src="./template_files/jquery-2.0.3.min.js"></script>
+    <script src="./template_files/bootstrap.min.js"></script>
+    <script type="text/javascript">if(!NREUMQ.f){NREUMQ.f=function(){NREUMQ.push(["load",new Date().getTime()]);var e=document.createElement("script");e.type="text/javascript";e.src=(("http:"===document.location.protocol)?"http:":"https:")+"//"+"js-agent.newrelic.com/nr-100.js";document.body.appendChild(e);if(NREUMQ.a)NREUMQ.a();};NREUMQ.a=window.onload;window.onload=NREUMQ.f;};NREUMQ.push(["nrfj","bam.nr-data.net","ed933f6b98","2060009","M1FQYEpYD0QFW0dbDgobZ0ZRFg==",0,11,new Date().getTime(),"","","","",""]);</script>
+
+    <script type="text/javascript" src="./template_files/nr-100.js"></script><script type="text/javascript" src="./template_files/ed933f6b98"></script></body></html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Isabelle Cardoso Ferreira">
+    <meta name="description" content="Challenge yourself to identify as many movies as you can in the shortest amount of time!">
+    <link rel="shortcut icon" href="./template_files/logo.png">
+    <title>Guess da film!</title>
+    <link href="./template_files/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./template_files/css/jumbotron-narrow.css" rel="stylesheet">
+    <script src="//www.parsecdn.com/js/parse-1.6.0.min.js"></script>
+    <!--[if lt IE 9]>
+    <script src="/static/js/html5shiv.js"></script>
+    <script src="/static/js/respond.min.js"></script>
+    <![endif]-->
+    <script type="text/javascript">var NREUMQ=NREUMQ||[];NREUMQ.push(["mark","firstbyte",new Date().getTime()]);</script><style type="text/css"></style>
+    <style type="text/css">.cf-hidden { display: none; } .cf-invisible { visibility: hidden; }</style></head>
+<style>
+    body {background-color: #34000a  }
+</style>
+<script src="./js/functions.js"></script>
+<script type="text/javascript">
+    function load()
+    {
+        Parse.initialize("hbknX2IP9kD60E8SM2ThZFdeU6i2pKVHriSEcfDB", "S3hldOjxDRqdEXaXvQptai9VeatJzyv5ZDhigzBR");
+        var obj = localStorage.getItem('score');
+        var obj2 = localStorage.getItem('lives');
+
+        if (obj != null) {
+            localStorage.removeItem('score');
+        }
+
+        if (obj2 != null) {
+            localStorage.removeItem('lives');
+        }
+
+        setHighScores();
+
+    }
+</script>
+<body onload="load()">
+<div class="container">
+    <div class="navbar navbar-default">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">Guess da film!</a>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="active"><a href="game.html">Play</a></li>
+                <li><a href="">Highscores</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="about jumbotron">
+        <h2>Highscores</h2>
+        <br>
+        <table align="center" style="width:100%">
+            <col align="right">
+            <col align="left">
+            <tr>
+                <th>Player</th>
+                <th>Score</th>
+            </tr>
+            <tr>
+                <td id="player1"><span class="ui-button-text">  </span></td>
+                <td id="score1"><span class="ui-button-text"> </span></td>
+            </tr>
+            <tr>
+                <td id="player2"><span class="ui-button-text"> </span></td>
+                <td id="score2"><span class="ui-button-text"> </span></td>
+            </tr>
+            <tr>
+                <td id="player3"><span class="ui-button-text"> </span></td>
+                <td id="score3"><span class="ui-button-text"> </span></td>
+            </tr>
+            <tr>
+                <td id="player4"><span class="ui-button-text"> </span></td>
+                <td id="score4"><span class="ui-button-text"> </span></td>
+            </tr>
+            <tr>
+                <td id="player5"><span class="ui-button-text"> </span></td>
+                <td id="score5"><span class="ui-button-text"> </span></td>
+            </tr>
+            <tr>
+                <td id="player6"><span class="ui-button-text"> </span></td>
+                <td id="score6"><span class="ui-button-text"> </span></td>
+            </tr>
+            <tr>
+                <td id="player7"><span class="ui-button-text"> </span></td>
+                <td id="score7"><span class="ui-button-text"> </span></td>
+            </tr>
+            <tr>
+                <td id="player8"><span class="ui-button-text"> </span></td>
+                <td id="score8"><span class="ui-button-text"> </span></td>
+            </tr>
+            <tr>
+                <td id="player9"><span class="ui-button-text"> </span></td>
+                <td id="score9"><span class="ui-button-text"> </span></td>
+            </tr>
+            <tr>
+                <td id="player10"><span class="ui-button-text"> </span></td>
+                <td id="score10"><span class="ui-button-text"> </span></td>
+            </tr>
+        </table>
+
+        <script type="javascript">$('#score span').text(""+obj['score']);</script>
+    </div>
+    <div class="footer">
+        <p class="pull-left">created by <a href="https://br.linkedin.com/in/isabellecfer">Isabelle Cardoso Ferreira</a> in 2015</p>
+        <p class="pull-right">
+        </p>
+         </div>
+</div>
+<script src="./template_files/jquery-2.0.3.min.js"></script>
+<script src="./template_files/bootstrap.min.js"></script>
+<script type="text/javascript" src="./template_files/nr-100.js"></script><script type="text/javascript" src="./template_files/ed933f6b98"></script></body></html>
